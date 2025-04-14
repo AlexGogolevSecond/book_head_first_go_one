@@ -6,6 +6,8 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strconv"
+	"strings"
 )
 
 func PassFail() {
@@ -17,13 +19,23 @@ func PassFail() {
 		log.Fatal(err)
 	}
 
-	/*
-		if input >= 60 {
-			status := "passing"
-		} else {
-			status := "failing"
-		}
-	*/
+	input = strings.TrimSpace(input)  // удаляем с краёв пробелы и всякие служебные символы типа табуляции и переноса строки
+	grade, err := strconv.ParseFloat(input, 64)  // преобразуем строку в число float
 
-	fmt.Println(input)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	if grade >= 60 {
+		status := "passing"
+	} else {
+		status := "failing"
+	}
+
+	fmt.Println(status)
+
+	// s := "\t lalala tru-la-la\n"
+	// fmt.Println(strings.TrimSpace(s))
+	// fmt.Println(s)
+
 }
