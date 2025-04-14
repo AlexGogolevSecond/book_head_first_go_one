@@ -12,7 +12,7 @@ func main() {
 	// fmt.Println(math.Add(5, 3))
 	// fmt.Println(math.Subtract(10, 4))
 	// fmt.Println(utils.GetTime())
-	utils.Replace()
+	// utils.Replace()
 	utils.PassFail()
 
 }
