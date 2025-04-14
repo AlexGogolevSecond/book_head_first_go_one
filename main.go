@@ -14,5 +14,6 @@ func main() {
 	// fmt.Println(utils.GetTime())
 	// utils.Replace()
 	utils.PassFail()
+	utils.Erunda()
 
 }
