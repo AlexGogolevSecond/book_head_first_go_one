@@ -26,10 +26,11 @@ func PassFail() {
 		log.Fatal(err)
 	}
 
+	var status string
 	if grade >= 60 {
-		status := "passing"
+		status = "passing"
 	} else {
-		status := "failing"
+		status = "failing"
 	}
 
 	fmt.Println(status)
