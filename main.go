@@ -13,7 +13,7 @@ func main() {
 	// fmt.Println(math.Subtract(10, 4))
 	// fmt.Println(utils.GetTime())
 	// utils.Replace()
-	utils.PassFail()
+	// utils.PassFail()
 	// utils.Erunda()
 	utils.Guess()
 
