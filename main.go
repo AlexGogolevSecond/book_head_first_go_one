@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	fmt.Println("abc")
+	fmt.Println("---")
 	// fmt.Println(utils.Print("Alice"))
 	// fmt.Println(math.Add(5, 3))
 	// fmt.Println(math.Subtract(10, 4))

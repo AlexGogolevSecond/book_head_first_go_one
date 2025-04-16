@@ -1,8 +1,13 @@
 package utils
 
 import (
+	"bufio"
 	"fmt"
+	"log"
 	"math/rand"
+	"os"
+	"strconv"
+	"strings"
 )
 
 func Guess() {
@@ -14,5 +19,22 @@ func Guess() {
 	// fmt.Printf("rnd %d\n", rnd)
 	fmt.Println("I've chosen a random number between 1 and 100.")
 	fmt.Println("Can you guess it?")
-	fmt.Println(rnd)
+	  fmt.Println(rnd)
+	reader := bufio.NewReader(os.Stdin) // Создать «буферизованное средство чтения» для получения текста с клавиатуры
+	fmt.Print("Your guess: ")
+	input, err := reader.ReadString('\n')  // читаем данные из консоли
+	if err != nil {
+		log.Fatal(err)
+	}
+	input = strings.TrimSpace(input)  // удаляем символы справа/слева
+	guess, err := strconv.Atoi(input)  // преобразуем строку в int
+	if err != nil {
+		log.Fatal(err)
+	}
+	
+	if guess < rnd {
+		fmt.Println("Oops. Your guess was LOW")
+	} else if guess > rnd {
+		fmt.Println("Oops. Your guess was HIGH")
+	}
 }
