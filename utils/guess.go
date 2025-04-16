@@ -36,7 +36,7 @@ func Guess() {
 		y := x + 10
 		fmt.Println("y" + strconv.Itoa(y))  // !!! пробразуем int в строку
 	}
-
+	// fmt.Print(x) //x недоступен в текущей области видимости !!!
 	// for x:=10; x > 0; x-=2 {
 	// 	fmt.Println(x)
 	// }
