@@ -18,8 +18,7 @@ func Guess() {
 	rnd := rand.Intn(100) + 1
 	// fmt.Printf("rnd %d\n", rnd)
 	fmt.Println("I've chosen a random number between 1 and 100.")
-	fmt.Println("Can you guess it?")
-	fmt.Println(rnd)
+	// fmt.Println(rnd)
 	reader := bufio.NewReader(os.Stdin) // Создать «буферизованное средство чтения» для получения текста с клавиатуры
 	for guesses := 0; guesses < 10; guesses++ {
 		fmt.Println("You have", 10-guesses, "guesses left.")
