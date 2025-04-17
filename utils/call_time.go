@@ -5,6 +5,9 @@ import (
 	"time"
 )
 
+func lalala() {
+	fmt.Println("lalala")
+}
 
 func GetTime() int {
 	var now time.Time = time.Now()
