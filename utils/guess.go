@@ -17,6 +17,7 @@ func Guess() {
 	//rnd := rand.Intn(100) + 1  // интересная реализация - тут когда +1, то диапазон от 1 до 100, иначе от 0 до 99
 	rnd := rand.Intn(100) + 1
 	// fmt.Printf("rnd %d\n", rnd)
+	success := false
 	fmt.Println("I've chosen a random number between 1 and 100.")
 	// fmt.Println(rnd)
 	reader := bufio.NewReader(os.Stdin) // Создать «буферизованное средство чтения» для получения текста с клавиатуры
@@ -48,9 +49,13 @@ func Guess() {
 		} else if guess > rnd {
 			fmt.Println("Oops. Your guess was HIGH")
 		} else {
-			fmt.Println("You are win!!! You spent " + strconv.Itoa(guesses + 1) + " attempt")
+			fmt.Println("You are win!!! You spent " + strconv.Itoa(guesses + 1) + " attempt. Target is " + strconv.Itoa(rnd))
+			success = true
 			break
-		}
+		}		
+	}
+	if success == false {
+		fmt.Println("You lost. Target number is " + strconv.Itoa(rnd))
 	}
 }
 
