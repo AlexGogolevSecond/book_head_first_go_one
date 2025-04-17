@@ -15,6 +15,7 @@ func main() {
 	// utils.Replace()
 	// utils.PassFail()
 	// utils.Erunda()
-	utils.Guess()
+	// utils.Guess()
+	utils.Display1()
 
 }
