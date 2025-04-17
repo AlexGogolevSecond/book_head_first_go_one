@@ -54,7 +54,8 @@ func Guess() {
 			break
 		}		
 	}
-	if success == false {
+	//if success == false {
+	if !success {
 		fmt.Println("You lost. Target number is " + strconv.Itoa(rnd))
 	}
 }
