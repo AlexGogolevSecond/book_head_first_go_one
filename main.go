@@ -17,8 +17,17 @@ func main() {
 	// utils.Erunda()
 	// utils.Guess()
 	// utils.Display1()
-	a := utils.PaintNeeded(3.22, 2)
-	fmt.Println(a)
-	utils.PaintNeeded(4.2, 3)
-	utils.PaintNeeded(5.2, 3.5)
+
+
+	// a, err := utils.PaintNeeded(3.22, 2)
+	// fmt.Println(a, err)
+	// b, err := utils.PaintNeeded(4.2, -3)
+	// fmt.Println(b, err)
+	// c, err := utils.PaintNeeded(25.2, 33.5)
+	// fmt.Println(c, err)
+	
+	n := 5
+	fmt.Printf("n=%d\n", n)
+	n = utils.Double(n)
+	fmt.Printf("n=%d\n", n)
 }
