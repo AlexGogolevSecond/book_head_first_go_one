@@ -16,5 +16,9 @@ func main() {
 	// utils.PassFail()
 	// utils.Erunda()
 	// utils.Guess()
-	utils.Display1()
+	// utils.Display1()
+	a := utils.PaintNeeded(3.22, 2)
+	fmt.Println(a)
+	utils.PaintNeeded(4.2, 3)
+	utils.PaintNeeded(5.2, 3.5)
 }

@@ -6,7 +6,7 @@ import (
 )
 
 func lalala() {
-	fmt.Println("lalala")
+	fmt.Println("lalala")	
 }
 
 func GetTime() int {
