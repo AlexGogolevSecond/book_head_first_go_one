@@ -26,8 +26,12 @@ func main() {
 	// c, err := utils.PaintNeeded(25.2, 33.5)
 	// fmt.Println(c, err)
 	
-	n := 5
-	fmt.Printf("n=%d\n", n)
-	n = utils.Double(n)
-	fmt.Printf("n=%d\n", n)
+	// n := 5
+	// fmt.Println(n)
+	// fmt.Println(&n)
+	// var b int
+	// b = n
+	// fmt.Println(b)
+	// fmt.Println(&b)
+	utils.PointerAndTypeOfPointer()
 }
